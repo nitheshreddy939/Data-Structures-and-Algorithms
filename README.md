@@ -1,0 +1,1 @@
+This repository is dedicated to my problem solving journey. It's where I keep my work on data structures and algorithms as I build up the skills that sit underneath good engineering: breaking a problem down, picking the right structure for it, and reasoning about time and space before writing a line of code.
