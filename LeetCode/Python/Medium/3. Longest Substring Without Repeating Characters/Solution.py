@@ -3,27 +3,22 @@ class Solution:
 
         seen = set()
 
-        maximum = float('-inf')
+        maximum = 0
 
-        count = 0
+        l = 0
 
-        j=0
+        for r in range(len(s)):
 
-        for i in range(len(s)):
+            while s[r] in seen:
+                seen.remove(s[l])
+                l+=1
 
-            while s[i] in seen:
-                seen.remove(s[j])
-                j+=1
-                count-=1
-
-            seen.add(s[i])
-
-            count+=1
-
-            maximum = max(maximum,count)
+            seen.add(s[r])
+            maximum = max(maximum,r-l+1)
 
         return maximum
 
 
-            
+
+
         
